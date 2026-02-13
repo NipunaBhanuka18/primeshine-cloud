@@ -18,7 +18,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # --- 2. CLOUD CONFIGURATION ---
-SUPABASE_URL = "https://krupmoagkjobtmxygqkf.supabase.co  # ⚠️ Replace with your Supabase URL
+SUPABASE_URL = "https://krupmoagkjobtmxygqkf.supabase.co"  # ⚠️ Replace with your Supabase URL
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtydXBtb2Fna2pvYnRteHlncWtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA2ODg4ODYsImV4cCI6MjA4NjI2NDg4Nn0.1peHG6QH0mNE9SXkNLyrDF4WtHuOi-6xoL0ASazFqNM"     # ⚠️ Replace with your Supabase Key
 
 # Fallback to local JSON if cloud fails
@@ -525,4 +525,5 @@ def main(page: ft.Page):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     ft.app(target=main, view=ft.WEB_BROWSER, host="0.0.0.0", port=port)
+
 
